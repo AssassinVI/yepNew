@@ -1,0 +1,702 @@
+.ad-body {
+    background-image: url(../images/ad/ad_bg.webp);
+    background-color: white;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-repeat: repeat-y;
+    background-attachment: fixed;
+
+    @media all and (max-width:1024px) {
+        background-image: none;
+        background-attachment: initial;
+    }
+
+    header {
+        .right-box {
+            @media all and (max-width:1440px) {
+                padding-right: 13vw;
+            }
+        }
+    }
+
+    .container {
+        width: 100%;
+        padding-top: 7vw;
+        padding-bottom: 1vw;
+
+        @media all and (max-width:500px) {
+            padding-top: 13vw;
+        }
+
+        .c1-box {
+            padding-bottom: 3vw;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+
+            @media all and (max-width:1024px) {
+                height: calc(var(--loadingvh, 1vh) *83);
+
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            // 
+            .moblie-c1-bg {
+                position: absolute;
+                width: 130vw;
+                left: -13vw;
+                bottom: 0vw;
+                z-index: 1;
+                display: none;
+
+                @media all and (max-width:1024px) {
+                    display: flex;
+                }
+
+
+                @media all and (max-width:500px) {
+                    width: 145vw;
+                }
+            }
+
+            .title-box {
+
+                font-size: 1.1vw;
+                letter-spacing: 0.3em;
+                font-family: 'Noto Serif TC';
+                align-items: center;
+                font-weight: 600;
+                width: 80%;
+                margin: 0 auto;
+
+                @media all and (max-width:1024px) {
+                    display: none;
+                }
+
+                .text-1-box {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 85%;
+                    margin: 0 auto;
+                    margin-bottom: 0.5vw;
+
+                    @media all and (max-width:1024px) {
+                        margin-bottom: 0vw;
+                    }
+
+                    .line {
+                        width: 57%;
+
+                        img {
+                            width: 100%;
+                            text-align: center;
+                            padding-bottom: 0.2vw;
+                        }
+                    }
+                }
+
+                .text-2 {
+                    width: 85%;
+                    margin: 0 auto;
+
+                    @media all and (max-width:1024px) {
+                        letter-spacing: 1em;
+                        padding-left: 5vw;
+                        margin-bottom: 3vw;
+                        font-size: $moblie-big-title;
+                    }
+                }
+            }
+
+            .title-box-moblie {
+
+                font-family: 'Noto Serif TC';
+                align-items: center;
+                font-weight: 600;
+                width: 80%;
+                margin: 0 auto;
+                padding-top: 17vw;
+                display: flex;
+                flex-direction: column;
+
+                display: none;
+
+                @media all and (max-width:1024px) {
+                    display: flex;
+                    padding-top: 0vw;
+                }
+
+                .text-1 {
+                    text-align: center;
+                    font-size: $moblie-main-title;
+                    letter-spacing: 0.5em;
+                    margin-bottom: 3vw;
+
+                    @media all and (max-width:500px) {
+                        margin-bottom: 5vw;
+                    }
+                }
+
+                .text-2-box {
+                    text-align: center;
+                    letter-spacing: 0.2em;
+                    font-size: $moblie-content;
+
+                    :nth-child(1) {
+                        @media all and (max-width:500px) {
+                            margin-bottom: 1vw;
+                        }
+                    }
+
+
+                }
+            }
+
+            .content {
+                width: 80vw;
+                margin: 0 auto;
+                display: flex;
+                padding-top: 3vw;
+                position: relative;
+
+                @media all and (max-width:1024px) {
+                    display: none;
+                }
+
+                .left-box {
+                    width: 14vw;
+                    align-self: self-end;
+                    position: absolute;
+
+                    img {
+                        width: 100%;
+
+                    }
+                }
+
+                .middle-box {
+
+                    width: 100%;
+                    padding-bottom: 10vw;
+                    text-align: center;
+                    position: relative;
+                    padding-right: 3vw;
+
+                    img {
+                        width: 28vw;
+                    }
+
+                    .text {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-8%, -85%);
+                        font-family: "Noto Serif TC";
+                        align-items: center;
+                        letter-spacing: 0.1em;
+                        font-weight: 600;
+                        line-height: 1.5vw;
+                        font-size: 0.85vw;
+
+                        @media all and (max-width:1440px) {
+                            font-size: 1vw;
+                            line-height: 1.8vw;
+                        }
+                    }
+
+                    .item1 {
+                        position: absolute;
+                        top: 13.5vw;
+                        left: 22vw;
+                        width: 13vw;
+
+                    }
+
+                    .item2 {
+                        position: absolute;
+                        bottom: 4vw;
+                        right: 0.5vw;
+                        width: 24vw;
+                    }
+                }
+
+                .right-box {
+
+                    width: 21vw;
+                    position: absolute;
+                    right: 0.5vw;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+
+                    }
+                }
+            }
+
+            .content-moblie {
+                width: 100vw;
+                margin: 0 auto;
+                display: flex;
+                padding-top: 3vw;
+                position: relative;
+                padding-top: 15vw;
+                display: none;
+
+                @media all and (max-width:500px) {
+                    padding-top: 17vw;
+                    display: flex;
+                }
+
+                .text {
+                    display: flex;
+                    font-family: "Noto Serif TC";
+                    align-items: center;
+                    letter-spacing: 0.1em;
+                    text-align: center;
+                    font-weight: 600;
+                    justify-content: center;
+                    margin: 0 auto;
+                    line-height: 9vw;
+                    position: relative;
+                    z-index: 2;
+                    font-size: $moblie-sub-title;
+
+                    @media all and (max-width:500px) {
+                        line-height: 9vw;
+                    }
+                }
+
+            }
+        }
+
+        .divider {
+            display: none;
+
+            @media all and (max-width:1024px) {
+                margin-top: 5vw;
+                display: flex;
+                width: 100vw;
+                height: 13vw;
+                margin-bottom: 8vw;
+            }
+
+            @media all and (max-width:500px) {
+                height: 20vw;
+                margin-bottom: 10vw;
+            }
+        }
+
+        .content-box {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            @media all and (max-width:1024px) {
+                padding-bottom: 7vw;
+            }
+
+            .number-left {
+                display: flex;
+                width: 80vw;
+                margin: 0 auto;
+                display: flex;
+                position: relative;
+                height: 70vh;
+
+                @media all and (max-width:1024px) {
+                    flex-direction: column;
+                    width: 90vw;
+                    height: auto;
+                    margin-bottom: 15vw;
+                }
+
+                @media all and (max-width:500px) {
+                    margin-bottom: 18vw;
+                }
+
+                .left {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    border-right: 1px solid black;
+
+                    @media all and (max-width:1024px) {
+                        border-right: none;
+                        width: 100%;
+                    }
+
+                    .left-content {
+                        display: flex;
+                        justify-content: right;
+                        padding-right: 4vw;
+                        position: relative;
+
+                        @media all and (max-width:1024px) {
+                            justify-content: center;
+                            padding-right: 0vw;
+                        }
+
+                        .icon-box {
+                            display: flex;
+                            flex-direction: column;
+                            position: absolute;
+                            left: 14vw;
+                            top: 3vw;
+
+                            @media all and (max-width:1024px) {
+                                top: 9vw;
+                            }
+
+                            img {
+                                width: 7vw;
+
+                                @media all and (max-width:1024px) {
+                                    width: 11vw;
+                                }
+                            }
+                        }
+
+                        .text-box {
+
+                            .number-box {
+                                display: flex;
+                                margin-bottom: 1vw;
+                                justify-content: right;
+
+                                @media all and (max-width:1024px) {
+                                    justify-content: center;
+                                    margin-bottom: 6vw;
+                                }
+
+                                img {
+                                    width: 8vw;
+
+                                    @media all and (max-width:1024px) {
+                                        width: 20vw;
+                                    }
+                                }
+                            }
+
+                            .title-box {
+                                font-size: 1.1vw;
+                                letter-spacing: 0.2em;
+                                font-family: 'Noto Serif TC';
+                                align-items: center;
+                                text-align: right;
+                                font-weight: 600;
+                                margin-bottom: 1vw;
+
+                                @media all and (max-width:1024px) {
+                                    font-size: $moblie-sub-title;
+                                    text-align: center;
+                                    margin-bottom: 5vw;
+                                }
+
+                                @media all and (max-width:500px) {
+                                    font-size: 4.5vw;
+                                }
+                            }
+
+                            .text {
+                                font-size: 0.8vw;
+                                letter-spacing: 0.15em;
+                                font-family: 'Noto Serif TC';
+                                text-align: right;
+                                font-weight: 600;
+                                line-height: 1.5vw;
+                                display: flex;
+                                flex-direction: column;
+                                margin-bottom: 1vw;
+
+                                @media all and (max-width:1440px) {
+                                    font-size: 0.9vw;
+                                    line-height: 1.7vw;
+                                }
+
+                                @media all and (max-width:1024px) {
+                                    font-size: $moblie-content;
+                                    line-height: 7vw;
+                                    text-align: center;
+                                    margin-bottom: 7vw;
+                                }
+
+                                @media all and (max-width:500px) {
+                                    font-size: $moblie-sub-title;
+                                    line-height: 8vw;
+                                }
+
+                                .star-text {
+                                    color: #324d99;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+
+                    @media all and (max-width:1024px) {
+                        width: 100%;
+                    }
+
+                    .img-box {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        img {
+                            width: 30vw;
+
+                            @media all and (max-width:1024px) {
+                                width: 80vw;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .number-right {
+                display: flex;
+                width: 80vw;
+                margin: 0 auto;
+                display: flex;
+                position: relative;
+                height: 70vh;
+                flex-direction: row-reverse;
+
+                @media all and (max-width:1024px) {
+                    flex-direction: column;
+                    width: 90vw;
+                    height: auto;
+                    margin-bottom: 15vw;
+                }
+
+                @media all and (max-width:500px) {
+                    margin-bottom: 18vw;
+                }
+
+                .left {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    @media all and (max-width:1024px) {
+                        width: 100%;
+                    }
+
+                    .left-content {
+                        display: flex;
+                        justify-content: left;
+                        padding-left: 4vw;
+                        flex-direction: row-reverse;
+                        position: relative;
+
+                        @media all and (max-width:1024px) {
+                            justify-content: center;
+                            padding-left: 0vw;
+                        }
+
+                        .icon-box {
+                            display: flex;
+                            flex-direction: column;
+                            right: 13vw;
+                            top: 3vw;
+                            position: absolute;
+
+                            @media all and (max-width:1024px) {
+                                top: 11vw;
+                            }
+
+                            img {
+                                width: 7vw;
+
+                                @media all and (max-width:1024px) {
+                                    width: 11vw;
+                                }
+                            }
+                        }
+
+                        .text-box {
+
+                            .number-box {
+                                margin-bottom: 1vw;
+                                display: flex;
+                                justify-content: left;
+
+                                @media all and (max-width:1024px) {
+                                    justify-content: center;
+                                    margin-bottom: 6vw;
+                                }
+
+                                img {
+                                    width: 8vw;
+
+                                    @media all and (max-width:1024px) {
+                                        width: 20vw;
+                                    }
+                                }
+                            }
+
+                            .title-box {
+                                font-size: 1.1vw;
+                                letter-spacing: 0.2em;
+                                font-family: 'Noto Serif TC';
+                                align-items: center;
+                                text-align: left;
+                                font-weight: 600;
+                                margin-bottom: 1vw;
+
+                                @media all and (max-width:1024px) {
+                                    font-size: $moblie-sub-title;
+                                    text-align: center;
+                                    margin-bottom: 5vw;
+                                }
+
+                                @media all and (max-width:500px) {
+                                    font-size: 4.5vw;
+                                }
+                            }
+
+                            .text {
+                                font-size: 0.8vw;
+                                letter-spacing: 0.15em;
+                                font-family: 'Noto Serif TC';
+                                text-align: left;
+                                font-weight: 600;
+                                line-height: 1.5vw;
+                                display: flex;
+                                flex-direction: column;
+                                margin-bottom: 1vw;
+
+                                @media all and (max-width:1440px) {
+                                    font-size: 0.9vw;
+                                    line-height: 1.7vw;
+                                }
+
+                                @media all and (max-width:1024px) {
+                                    font-size: $moblie-content;
+                                    line-height: 7vw;
+                                    margin-bottom: 7vw;
+                                    text-align: center;
+                                }
+
+                                @media all and (max-width:500px) {
+                                    font-size: $moblie-sub-title;
+                                    line-height: 8vw;
+                                }
+
+                                .star-text {
+                                    color: #324d99;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    border-right: 1px solid black;
+
+                    @media all and (max-width:1024px) {
+                        border-right: none;
+                        width: 100%;
+                    }
+
+                    .img-box {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        img {
+                            width: 30vw;
+
+                            @media all and (max-width:1024px) {
+                                width: 80vw;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .content1 {
+                .left {
+
+                    .left-content {
+                        position: relative;
+
+                        .icon-box {
+                            display: flex;
+                            flex-direction: column;
+                            position: absolute;
+                            left: 14vw;
+                            top: 3vw;
+
+                            @media all and (max-width:1024px) {
+                                left: 0vw;
+                            }
+
+                            img {
+                                width: 11vw;
+
+                                @media all and (max-width:1024px) {
+                                    width: 17vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .content6 {
+                .left {
+                    .left-content {
+                        .text-box {
+                            .text {
+                                @media all and (max-width:1024px) {
+                                    display: none;
+                                }
+                            }
+
+                            .text-moblie {
+                                font-size: 0.8vw;
+                                letter-spacing: 0.15em;
+                                font-family: 'Noto Serif TC';
+                                text-align: left;
+                                font-weight: 600;
+                                line-height: 1.5vw;
+                                display: none;
+                                flex-direction: column;
+                                margin-bottom: 1vw;
+
+                                @media all and (max-width:1024px) {
+                                    display: flex;
+                                    font-size: $moblie-content;
+                                    line-height: 7vw;
+                                    margin-bottom: 7vw;
+                                    text-align: center;
+                                }
+
+
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

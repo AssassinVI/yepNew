@@ -1,0 +1,23 @@
+//Utils
+@import 'utils/basic';
+@import 'utils/mixin';
+@import 'utils/variables';
+
+//layout
+@import 'layout/header';
+@import 'layout/menu';
+@import 'layout/footer';
+
+//Pages
+@import 'pages/index';
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/ad';
+@import 'pages/work';
+@import 'pages/other';
+@import 'pages/news';
+
+//components
+.text-danger{
+    color: #de0e0e;
+}
